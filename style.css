@@ -91,3 +91,110 @@ html {
 .h1-footer{
     font-size: 40px;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.login-container {
+    display: flex;
+    width: 900px;
+    height: 550px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.login-left {
+    background-color: #2E4718;
+    color: white;
+    width: 50%;
+    padding: 60px 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+}
+
+.login-left .logo {
+    width: 120px;
+    margin-bottom: 80px;
+}
+
+.login-left h1 {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.login-right {
+    width: 50%;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-right h2 {
+    color: #2E4718;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 14px;
+    color: #2E4718;
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 10px 15px;
+    border: 2px solid #2E4718;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #2E4718;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1f3110;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.signup-text a {
+    color: #2E4718;
+    text-decoration: underline;
+}
