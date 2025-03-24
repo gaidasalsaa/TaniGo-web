@@ -68,7 +68,7 @@ html {
 .container-content {
     background-color: rgb(255, 255, 255);
     display: flex; /*menentukan urutan kotaknya*/
-    height: 105vh; /*disesuaikan sama yang navbar-container biar sama*/ 
+    height: 85vh; /*disesuaikan sama yang navbar-container biar sama*/ 
     justify-content: center; /*untuk mengatur margin*/
     align-items: center;
 }
@@ -85,6 +85,121 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+.dashboard-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.produk-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+}
+
+.produk-item {
+    background-color: #f1f1dc;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.produk-item img {
+    width: 150px;    
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px; 
+}
+
+.destinasi-wisata {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+.wisata-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.wisata-item {
+    width: 22%;
+    min-width: 140px;
+    max-width: 220px;
+    background-color: #f5f5dc;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.wisata-item img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+  
+  /* Tablet: 2 per baris */
+  @media screen and (max-width: 768px) {
+    .wisata-item {
+      width: 45%;
+    }
+  }
+  
+  /* Mobile: 1 per baris */
+  @media screen and (max-width: 480px) {
+    .wisata-item {
+      width: 90%;
+    }
+}
+
+.wisata-arrow {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-btn {
+    font-size: 24px;
+    background-color: #f1f1dc;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.arrow-btn:hover {
+    background-color: #ddd;
 }
 
 .h1-footer{
