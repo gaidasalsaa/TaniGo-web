@@ -202,8 +202,55 @@ h2 {
     background-color: #ddd;
 }
 
-.h1-footer{
-    font-size: 40px;
+footer {
+    background-color: #2d4f1f;
+    color: #fff;
+    padding: 30px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d4e09b;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-location {
+    display: flex;
+    align-items: center;
+}
+
+.footer-location img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links {
+        margin: 15px 0;
+    }
+    .footer-location {
+        justify-content: center;
+    }
 }
 
 /* --- Tambahan CSS untuk login box --- */
@@ -428,4 +475,87 @@ form button:hover {
 
 .login-text a:hover {
     color: #1f3110;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+.categories button {
+    padding: 10px 15px;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.search input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background: #f1f5e1;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.product-card strong {
+    color: #000;
+}
+.add-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #35521C;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-button:hover {
+    background: #45a049;
 }
