@@ -32,58 +32,63 @@
         </div>
         <!-- navigation bar selesai-->
         
-        <main>
-            <h1>Pengaturan Akun</h1>
-            <div class="settings-container">
-              <aside>
+        <!-- container  -->
+        <main class="container">
+            <h1 class="page-title">Transaksi Pembelian</h1>
+            <div class="main-content">
+              <!-- Sidebar -->
+              <aside class="sidebar">
                 <ul>
-                  <li class="active">Profil</li>
-                  <li>Pembelian</li> <!--ini nanti di link ke pembelian-->
-                  <li>
-                    <a href="keranjang.html" class="buttonprof">Keranjang</a></li>
+                  <li class="active">Pembelian</li>
+                  <li>Keranjang</li>
                 </ul>
               </aside>
         
-              <section class="form-section">
-                <div class="profile-picture">
-                  <img src="https://img.icons8.com/ios/100/user--v1.png" alt="Profile Picture"/>
+              <!-- Content Area -->
+              <section class="content-area">
+                <div class="tabs">
+                  <div class="tab">Belum Dibayar</div>
+                  <div class="tab">Dikemas</div>
+                  <div class="tab">Dikirim</div>
+                  <div class="tab">Berikan Ulasan</div>
                 </div>
-                <form>
-                  <div class="form-grid">
-                    <div class="form-group">
-                      <label>Nama</label>
-                      <input type="text" />
-                    </div>
-                    <div class="form-group">
-                      <label>Jenis Kelamin</label>
-                      <input type="text" />
-                    </div>
-                    <div class="form-group">
-                      <label>E-mail</label>
-                      <input type="email" />
-                    </div>
-                    <div class="form-group">
-                      <label>Nomor HP</label>
-                      <input type="text" />
-                    </div>
-                    <div class="form-group">
-                      <label>Tanggal Lahir</label>
-                      <input type="date" />
-                    </div>
-                    <div class="form-group">
-                      <label>Kota</label>
-                      <input type="text" />
-                    </div>
-                    <div class="form-group full">
-                      <label>Alamat</label>
-                      <textarea rows="3"></textarea>
-                    </div>
+        
+                <h2 class="section-title">Riwayat Transaksi</h2>
+        
+                <!-- Transaction Cards -->
+                <div class="transaction-card">
+                  <img src="beras.png" alt="Beras Porang" />
+                  <div class="item-info">
+                    <p class="item-name">Beras Porang</p>
+                    <p class="item-weight">1 kg</p>
+                    <p class="item-price">Rp. 23.000</p>
                   </div>
-                  <button type="submit" class="save-btn">Simpan</button>
-                </form>
+                  <div class="status dikirim">Dikirim</div>
+                </div>
+        
+                <div class="transaction-card">
+                  <img src="beras.png" alt="Porang" />
+                  <div class="item-info">
+                    <p class="item-name">Porang</p>
+                    <p class="item-weight">3 kg</p>
+                    <p class="item-price">Rp. 45.000</p>
+                  </div>
+                  <div class="status selesai">Selesai</div>
+                </div>
+        
+                <div class="transaction-card">
+                  <img src="beras.png" alt="Beras Porang" />
+                  <div class="item-info">
+                    <p class="item-name">Beras Porang</p>
+                    <p class="item-weight">1 kg</p>
+                    <p class="item-price">Rp. 23.000</p>
+                  </div>
+                  <div class="status selesai">Selesai</div>
+                </div>
               </section>
             </div>
-          </main>
+        </main>
+        
         
         <footer>
             <div class="footer-logo">

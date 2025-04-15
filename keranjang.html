@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>TaniGo</title>
-        <link rel="stylesheet" href="style.css" /> 
+        <link rel="stylesheet" href="style.css"/> 
     </head>
     <body>
         <div class="container">
@@ -24,10 +24,80 @@
             
             <!-- Tambahan: Login & Register -->
             <div class="auth-navbar">
-                <a href="login.html" class="a-auth">Login</a>
-                <a href="register.html" class="a-auth">Register</a>
+                <a href="Profil.html" class="profile">Gaida Salsabila
+                    <img src="https://img.icons8.com/ios-glyphs/30/user--v1.png" alt="User Icon"/>
+                </a>
             </div>
         </div>
+
+        <main class="container">
+            <h1>Keranjang</h1>
+            <div class="cart-content">
+              <aside class="cart-summary">
+                <div class="select-all">
+                  <label><input type="checkbox" /> Pilih semua</label>
+                </div>
+                <div class="summary-box">
+                  <h3>Ringkasan belanja</h3>
+                  <div class="total">
+                    <span>Total</span>
+                    <strong>Rp. 23.000</strong>
+                  </div>
+                  <button class="buy-button">Beli (1)</button>
+                </div>
+              </aside>
+        
+              <section class="cart-items">
+                <!-- Item -->
+                <div class="cart-item">
+                  <input type="checkbox" />
+                  <img src="BarangMentah.png" alt="Beras Porang" class="item-img" />
+                  <div class="item-details">
+                    <p class="item-name">Beras Porang</p>
+                    <p class="item-weight">1 kg</p>
+                  </div>
+                  <div class="item-price">Rp. 23.000</div>
+                  <div class="item-qty">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                  </div>
+                </div>
+        
+                <div class="cart-item">
+                  <input type="checkbox" />
+                  <img src="KerajinanTangan.png" alt="Tas Anyam" class="item-img" />
+                  <div class="item-details">
+                    <p class="item-name">Tas Anyam</p>
+                    <p class="item-weight">1 pcs</p>
+                  </div>
+                  <div class="item-price">Rp. 75.000</div>
+                  <div class="item-qty">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                  </div>
+                </div>
+
+                <div class="cart-item">
+                    <input type="checkbox" />
+                    <img src="BarangJadi.png" alt="Beras Porang" class="item-img" />
+                    <div class="item-details">
+                      <p class="item-name">Keripik Porang</p>
+                      <p class="item-weight">1 kg</p>
+                    </div>
+                    <div class="item-price">Rp. 30.000</div>
+                    <div class="item-qty">
+                      <button>-</button>
+                      <span>2</span>
+                      <button>+</button>
+                    </div>
+                  </div>
+        
+                <!-- dan seterusnya -->
+              </section>
+            </div>
+          </main>
         <!-- navigation bar selesai-->
         <footer>
             <div class="footer-logo">
@@ -41,7 +111,7 @@
             </div>
             <div class="footer-location">
                 <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" alt="Lokasi">
-                <p>Kecamatan Ngrayun, Kabupaten Ponorogo, Jawa Timur, Indonesia</p>
+                <a href="https://g.co/kgs/rVm2sN8" target="_blank">Kecamatan Ngrayun, Kabupaten Ponorogo, Jawa Timur, Indonesia</a>
             </div>
         </footer>
     </body>
