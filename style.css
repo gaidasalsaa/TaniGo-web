@@ -1002,3 +1002,172 @@ h1 {
 h2 {
     font-size: 36px;
 }
+
+.containeradm {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.sidebaradm {
+    background: #243b0b;
+    color: #fff;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+  
+.logoadm {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    width: 120px;
+    margin-left: 50px;
+    margin-top: 30px;
+
+
+  }
+  
+.logoadm span {
+    color: #b5e68d;
+  }
+  
+  .navadm a {
+    display: block;
+    padding: 12px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+  
+  .navadm a.active,
+  .navadm a:hover {
+    background-color: #dce3c7;
+    color: #000;
+    padding-left: 10px;
+    border-radius: 6px;
+  }
+  
+  .footeradm {
+    font-size: 12px;
+    color: #ddd;
+    margin-top: 40px;
+  }
+  
+  /* Main section */
+  .mainadm {
+    flex: 1;
+    padding: 20px 30px;
+  }
+  
+  .headeradm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .useradm {
+    font-weight: bold;
+  }
+  
+  .dashboardadm h3 {
+    margin-bottom: 10px;
+  }
+  
+  .statsadm {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .stat-cardadm {
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #243b0b;
+    background: #eee;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .stat-cardadm span {
+    display: block;
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  
+  .brown { background: #dbc9c1; }
+  .green { background: #dceec9; }
+  .yellow { background: #f4f4d4; }
+  .blue { background: #dfeeff; }
+  
+  .chartadm {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .chartadm img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  /* Aktivitas */
+  .aktivitasadm {
+    margin-top: 30px;
+  }
+  
+  .logadm {
+    background: #f1f3e7;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.6;
+  }
+  
+  .logadm hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px dashed #bbb;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .containeradm {
+      flex-direction: column;
+    }
+  
+    .sidebaradm {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      position: static;
+      padding: 10px;
+    }
+  
+    .navadm {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  
+    .navadm a {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  
+    .mainadm {
+      padding: 20px 15px;
+    }
+  }
+
