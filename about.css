@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  header {
+    background-color: #2e4d16;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .user {
+    font-weight: bold;
+  }
+  
+  .about-section {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 2rem;
+    background-color: #fff;
+  }
+  
+  .about-content {
+    display: flex;
+    max-width: 1000px;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .about-image img {
+    width: 300px;
+    border-radius: 16px;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-text p {
+    margin: 0.5rem 0;
+  }
+  
+  .btn-primary {
+    margin-top: 1rem;
+    background-color: #2e4d16;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .values-section {
+    background-color: #f1ebe7;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .values-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .values-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .value-box {
+    background-color: white;
+    padding: 2rem;
+    width: 220px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .value-box h4 {
+    font-size: 2rem;
+    color: #2e4d16;
+  }
+  
+  .value-box h5 {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .blog-section {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .blog-posts {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+  
+  .blog-post {
+    width: 220px;
+  }
+  
+  .blog-post img {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .blog-post h4 {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+  }
+  
+  .blog-post p {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  .btn-wrap {
+    margin-top: 2rem;
+  }
+  
