@@ -1075,6 +1075,8 @@ h2 {
   
   .useradm {
     font-weight: bold;
+    text-decoration: none;
+    color: #000;
   }
   
   .dashboardadm h3 {
@@ -1171,3 +1173,27 @@ h2 {
     }
   }
 
+.jumlah {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+  
+.jumlah button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background-color: #2e4d16;
+    color: white;
+    cursor: pointer;
+}
+  
+.qty {
+    font-size: 1rem;
+    min-width: 20px;
+    text-align: center;
+}
