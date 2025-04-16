@@ -7,6 +7,7 @@ html {
 .container{
     height: 100vh;
     margin: auto; /*vh ini digunakan untuk mengatur ukuran web lebih fleksibel (bisa di hp maupun pc)*/
+    margin-bottom: 60px;
 }
 /* memanggil class */
 .navbar-container {
@@ -101,9 +102,10 @@ aside li {
 }
 
 aside .active {
-    background-color: #f3f3df;
+    background-color: #35521C;
     border-radius: 6px;
     text-decoration: none;
+    color: #fff;
 }
 
 aside .buttonprof{
@@ -522,12 +524,12 @@ form button:hover {
 .register-container {
     display: flex;
     width: 900px;
-    height: 550px;
+    height: 650px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     border-radius: 20px;
     overflow: hidden;
     background-color: white;
-    margin: 40px auto; /* biar nggak nempel ke atas */
+    margin: 20px auto; /* biar nggak nempel ke atas */
 }
 
 .register-left {
@@ -566,7 +568,7 @@ form button:hover {
 .register-right h2 {
     color: #2E4718;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -586,7 +588,7 @@ form input {
     padding: 10px 15px;
     border: 2px solid #2E4718;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
     font-size: 16px;
     outline: none;
     transition: border-color 0.3s ease;
@@ -794,7 +796,6 @@ form button:hover {
   
 .item-price {
     flex: 1;
-    text-align: right;
     font-weight: bold;
 }
   
@@ -945,4 +946,59 @@ form button:hover {
     .tab {
       flex: 1 1 45%;
     }
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+.tim{
+    margin-bottom: 100px;
+}
+
+.team-list {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.team-card {
+    text-align: center;
+    background-color: #f0f4e2;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 150px;
+}
+
+.avatar {
+    background-color: #c8e6a0;
+    color: #4e7329;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto 0.5rem auto;
+}
+
+.kontak a {
+    color: #4e7329;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('your-image-url.jpg'); /* Ganti dengan URL gambar Anda */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
 }
