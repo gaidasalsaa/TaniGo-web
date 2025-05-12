@@ -1044,6 +1044,7 @@ h2 {
     text-decoration: none;
     font-weight: bold;
     transition: 0.2s;
+    margin: 10px;
   }
   
   .navadm a.active,
@@ -1324,3 +1325,103 @@ h2 {
     text-decoration: none;
     font-size: 12px;
   }
+  .sidebarprofil {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .product-cardd {
+    background: #eef3e5;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    position: relative;
+  }
+
+  .product-cardd:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-cardd img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  .price {
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .sold {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: auto;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .quantity-control button {
+    background: #365314;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .quantity-control span {
+    margin: 0 10px;
+    font-size: 18px;
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .popup-content .close {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  

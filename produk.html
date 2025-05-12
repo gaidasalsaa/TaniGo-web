@@ -12,6 +12,9 @@
                     <img src="TaniGo_logo.png" class="img-logo">
                 </a> 
                 <li class="li-navbar">
+                    <a href="dashboard_user.html" class="a-navbar">Home</a>
+                </li>
+                <li class="li-navbar">
                     <a href="produk.html" class="a-navbar">Produk</a>
                 </li>
                 <li class="li-navbar">
@@ -49,63 +52,68 @@
             <input type="text" placeholder="Cari">
         </div>
     
-        <div class="products">
-            <div class="product-card">
-                <img src="BahanSetengahJadi.png" alt="Beras">
-                <h3>Beras Porang</h3>
-                <p><strong>Rp 23.000</strong></p>
-                <p>500+ terjual</p>
-                <div class="jumlah">
-                    <button class="minus">-</button>
-                    <span class="qty">0</span>
-                    <button class="plus">+</button>
+        <div class="product-container">
+            <div class="product-cardd" onclick="showPopup('Beras Porang', 'Beras Porang bermanfaat untuk diet rendah kalori dan baik untuk pencernaan.')">
+              <img src="BahanSetengahJadi.png" alt="Beras Porang">
+              <h3>Beras Porang</h3>
+              <p class="price">Rp 23.000</p>
+              <p class="sold">500+ terjual</p>
+              <div class="quantity-control">
+                <button onclick="event.stopPropagation(); decrease(this)">-</button>
+                <span>0</span>
+                <button onclick="event.stopPropagation(); increase(this)">+</button>
+              </div>
+            </div>
+          
+            <div class="product-cardd" onclick="showPopup('Porang', 'Porang bermanfaat untuk mengontrol gula darah dan sebagai bahan pangan sehat.')">
+              <img src="BarangMentah.png" alt="Porang">
+              <h3>Porang</h3>
+              <p class="price">Rp 15.000/kg</p>
+              <p class="sold">500+ terjual</p>
+              <div class="quantity-control">
+                <button onclick="event.stopPropagation(); decrease(this)">-</button>
+                <span>0</span>
+                <button onclick="event.stopPropagation(); increase(this)">+</button>
+              </div>
+            </div>
+          
+            <div class="product-cardd" onclick="showPopup('Keripik Porang', 'Keripik Porang adalah camilan sehat rendah kalori.')">
+              <img src="BarangJadi.png" alt="Keripik Porang">
+              <h3>Keripik Porang</h3>
+              <p class="price">Rp 20.000/kg</p>
+              <p class="sold">600+ terjual</p>
+              <div class="quantity-control">
+                <button onclick="event.stopPropagation(); decrease(this)">-</button>
+                <span>0</span>
+                <button onclick="event.stopPropagation(); increase(this)">+</button>
+              </div>
+            </div>
+          
+            <div class="product-cardd" onclick="showPopup('Tas Anyam', 'Tas anyam dibuat dari bahan alami yang ramah lingkungan.')">
+              <img src="KerajinanTangan.png" alt="Tas Anyam">
+              <h3>Tas Anyam</h3>
+              <p class="price">Rp 53.000/kg</p>
+              <p class="sold">100+ terjual</p>
+              <div class="quantity-control">
+                <button onclick="event.stopPropagation(); decrease(this)">-</button>
+                <span>0</span>
+                <button onclick="event.stopPropagation(); increase(this)">+</button>
+              </div>
+            </div>
+          </div>
+        
+                <!-- Popup -->
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2 id="popup-title"></h2>
+                <p id="popup-description"></p>
                 </div>
             </div>
-            <div class="product-card">
-                <img src="BarangMentah.png" alt="Porang">
-                <h3>Porang</h3>
-                <p><strong>Rp 15.000/kg</strong></p>
-                <p>500+ terjual</p>
-                <div class="jumlah">
-                    <button class="minus">-</button>
-                    <span class="qty">0</span>
-                    <button class="plus">+</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="BarangJadi.png" alt="Keripik">
-                <h3>Keripik Porang</h3>
-                <p><strong>Rp 20.000/kg</strong></p>
-                <p>600+ terjual</p>
-                <div class="jumlah">
-                    <button class="minus">-</button>
-                    <span class="qty">0</span>
-                    <button class="plus">+</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="BahanSetengahJadi.png" alt="Beras">
-                <h3>Beras Porang</h3>
-                <p><strong>Rp 23.000</strong></p>
-                <p>500+ terjual</p>
-                <div class="jumlah">
-                    <button class="minus">-</button>
-                    <span class="qty">0</span>
-                    <button class="plus">+</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="KerajinanTangan.png" alt="Tas">
-                <h3>Tas Anyam</h3>
-                <p><strong>Rp 53.000/kg</strong></p>
-                <p>100+ terjual</p>
-                <div class="jumlah">
-                    <button class="minus">-</button>
-                    <span class="qty">0</span>
-                    <button class="plus">+</button>
-                </div>
-            </div>
-        </div>
+  
+            <script src="script.js"></script>
+
+          <!-- footer -->
         <footer>
             <div class="footer-logo">
                 <img src="TaniGo_logo.png" class="img-logo">
